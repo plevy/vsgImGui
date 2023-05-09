@@ -22,6 +22,7 @@ if (VULKAN_SDK)
     set(ENV{VULKAN_SDK} ${VULKAN_SDK})
 endif()
 
+find_package(glslang)
 find_package(vsg 1.0.5)
 
 vsg_setup_dir_vars()
